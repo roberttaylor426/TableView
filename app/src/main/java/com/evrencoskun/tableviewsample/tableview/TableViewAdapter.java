@@ -68,7 +68,7 @@ public class TableViewAdapter extends AbstractTableAdapter<ColumnHeader, RowHead
      * @param viewType : This value comes from "getCellItemViewType" method to support different
      *                 type of viewHolder as a Cell item.
      *
-     * @see #getCellItemViewType(int);
+     * @see #getCellItemViewType(int, int);
      */
     @Override
     public AbstractViewHolder onCreateCellViewHolder(ViewGroup parent, int viewType) {
@@ -268,7 +268,7 @@ public class TableViewAdapter extends AbstractTableAdapter<ColumnHeader, RowHead
     }
 
     @Override
-    public int getCellItemViewType(int column) {
+    public int getCellItemViewType(int row, int column) {
 
         // The unique ID for this type of cell item
         // If you have different items for Cell View by X (Column) position,

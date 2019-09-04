@@ -33,7 +33,7 @@ public interface ITableAdapter {
 
     int getRowHeaderItemViewType(int position);
 
-    int getCellItemViewType(int position);
+    int getCellItemViewType(int rowPosition, int columnPosition);
 
     View getCornerView();
 
